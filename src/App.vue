@@ -12,6 +12,21 @@
       <router-link class="Order" to="/about">Order</router-link>
     </nav>
     <router-view/>
+
+    <div class="menu">
+     <nav>
+      <input type="search" name="" id="">
+     </nav>
+     <div>
+       <router-link  to="/">plate</router-link>  
+
+        <router-link  to="/">Sandwitch</router-link> 
+         <router-link  to="/">3asir </router-link> 
+          <router-link  to="/">others</router-link> 
+        
+     </div>
+    
+    </div>
   </div>
 </template>
 <script>
@@ -173,7 +188,8 @@ nav a.router-link-exact-active {
       bottom: 0;
       left: 0;
       right: 0;
-      
+      background-color: rgb(220, 219, 219);
+      display: none;
 
     }
 </style>
