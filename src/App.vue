@@ -14,18 +14,22 @@
     <router-view/>
 
     <div class="menu">
-     <nav>
-      <input type="search" name="" id="">
+     <nav class="nav-menu-header">
+      <div class="title-menu">
+       <h2>Delicious <br>
+         food for you</h2>
+      </div>
+      <input type="search" name="" class="Menu-input-search">
      </nav>
-     <div>
-       <router-link  to="/">plate</router-link>  
+     <div class="options">
+       <router-link  class="Menu-input" to="">Foods</router-link>  
 
-        <router-link  to="/">Sandwitch</router-link> 
-         <router-link  to="/">3asir </router-link> 
-          <router-link  to="/">others</router-link> 
+        <router-link class="Menu-input" to="">Drinks</router-link> 
+         <router-link class="Menu-input" to="">Snacks </router-link> 
+          <router-link class="Menu-input" to="">Sauce</router-link> 
         
      </div>
-    
+     <router-view/>
     </div>
   </div>
 </template>
@@ -188,8 +192,61 @@ nav a.router-link-exact-active {
       bottom: 0;
       left: 0;
       right: 0;
-      background-color: rgb(220, 219, 219);
+      background-color: rgb(251, 251, 251);
       display: none;
-
     }
+    .options{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        
+        border-radius: 20px;
+        height: 100px;
+      }
+      .Menu-input{
+       text-decoration: none;
+       width: 6em;
+       height: 2em;
+       font-family: 'Century Gothic',sans-serif;
+       font-style: normal;
+       font-weight: 400;
+       font-size: 17px;
+       color: rgb(112, 112, 112);
+       position: relative;
+       margin-top: 0.8em;
+       cursor: pointer;
+      }
+      .Menu-input:hover{
+        color: #FA4A0C;
+        border-bottom: 3px solid #FA4A0C;
+
+      }
+      .Menu-input-search{
+        border-color: black;
+      }
+      .nav-menu-header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 30%;
+      }
+      .title-menu{
+        width: 100%;
+        text-align: left;
+        padding-left: 50px;
+      }
+      .title-menu h2{
+      
+       letter-spacing: 2px;
+       
+      color: rgb(112, 112, 112);
+      Font-family: "Century" , "Gothic",sans-serif;
+      Font-style: "Regular";
+      Font-size: 34px;
+      Line-height: 100%;
+
+      }
+
 </style>
